@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>neat&clean</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/bootstrap.js" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Diplomata+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/images/images.png" type="image/x-icon">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<style>
+#home-background-img
+{
+  width:100%;
+  height:500px;
+
+}
+.navbar{
+  margin-bottom: 0;
+  border-radius:none;
+
+}
+.navbar-default a.navbar-brand{
+  color:pink;
+  font-family: 'Diplomata SC', cursive;
+  font-size:30px;
+
+}
+#home{
+  position: relative;
+  margin-top: 0px;
+
+
+}
+#home .container{
+  position:absolute;
+  top:80%;
+  width:100%;
+}
+#home h1{
+  color:white;
+  font-size:50px;
+  font-family: 'Baloo Bhaina', cursive;
+}
+h3{
+  font-family: 'Baloo Bhaina', cursive;
+  padding:30px 40px 30px 40px;
+}
+.icon a{
+  color:white;
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius:50%;
+  padding:30px;
+}
+.icon{
+  margin-top:-120px;
+}
+section{
+  margin-top: 50px;
+
+}
+.line{
+  width:30%;
+  border:2px solid purple;
+}
+.content{
+  font-size: 50px;
+  padding:20px 30px 20px 30px;
+   font-family: 'Lobster', cursive;
+}
+.about-icon{
+  font-size: 60px;
+  border:2px solid #736666;
+  border-radius: 50%;
+  padding: 40px 40px 40px 40px;
+  color:#8c6666;
+
+}
+h2{
+  margin-top: 50px;
+  color:green;
+}
+.margin-purpose{
+  margin-top:40px;
+}
+body{
+  background-color:#e2d5d5;
+}
+.section-content{
+font-family:'Baloo Bhaina', cursive;
+font-size:20px;"
+}
+#checklist img{
+  margin-bottom:20px;
+}
+@media (max-width:500px)
+        {
+          #home h1
+          {
+            font-size:30px;
+            padding-top:30px;
+          }
+          .icon{
+            margin-top:-100px;
+          }
+         .navbar-brand{
+           margin-left: -15px;
+         }
+          #home img{
+            height:400px;
+          }
+          nav.navbar-default #mynavigationbar .navbar-neat
+          {
+            margin-left:-15px;
+          }
+        }
+
+#our-community img
+        {
+          width: 200px;
+          margin: 0 auto;
+          border: 2px solid violet;
+          border-radius:50%;
+          height:200px;
+        }
+        .community-social-links a:hover
+        {
+          color:red;
+          text-decoration:none;
+        }
+      .community-social-links a{
+        font-size:30px;
+        color:violet;
+      }
+      #mygooglemap{
+        width:100%;
+        height:500px;
+        margin-top: 20px;
+
+      }
+.contact-description{
+  margin-bottom: 20px;
+  background-color:white;
+  height: 500px;
+}
+.contact-social-links{
+  padding:20px;
+  font-size:30px;
+}
+
+.promise-icon{
+  font-size:70px;
+  color:#8c6666;
+padding-bottom:20px;
+
+}
+.my-rounded-button{
+  border-radius:20px;
+  color:black;
+  background-color:grey;
+  padding:10px 30px 10px 30px;
+}
+nav.navbar-default .navbar-neat
+       {
+         margin-left:50px;
+       }
+       .white-content{
+         color:white;
+       }
+       .footer-links li , .footer-icons li
+         {
+           display: inline-block;
+         }
+         .footer-links li a , .footer-icons li a , .footer-content h3
+       {
+         color:white;
+         font-size: 16px;
+         padding: 10px;
+       }
+       .footer-content h3{
+         margin:-10px 0px 10px 0px;
+       }
+       .footer-links li a:hover , .footer-icons li a:hover
+       {
+         text-decoration:none;
+       }
+       footer{
+         background-color:blue;
+
+       }
+       #mynavigationbar a
+   {
+     color:grey;
+     font-size:18px;
+   }
+</style>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavigationbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      <a class="navbar-brand" href="#">neat&clean</a>
+    </div>
+    <div class="collapse navbar-collapse" id="mynavigationbar">
+      <ul class="nav navbar-nav navbar-left navbar-neat ">
+
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#our-community">Our community</a></li>
+        <li><a href="#our-promise">Our promise</a></li>
+
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+        <ul class="nav navbar-nav navbar-right ">
+             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+           </ul>
+
+  </div>
+</nav>
+<section id="home">
+  <img id="home-background-img" src="http://cleaningservice.vpweb.com/bg-1-102580.jpeg?u=2163145532" >
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center">You move out we clean up</h1>
+      <div class="text-center icon">
+        <a href="#">
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+      </div>
+    </div>
+    </div>
+</section>
+<section id="how-it-works">
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center">How it works</h1>
+      <hr class="line"/>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center margin-purpose">
+            <span class="about-icon">
+              <i class="glyphicon glyphicon-list-alt"></i>
+            </span>
+            <h2>Bond Back Guarantee</h2>
+            <p class="text-center section-content">Moving homes in Sydney is stressful enough. With our end of lease cleaning service, getting your bond back has never been easier. Rest assured knowing that your real estate agent or landlord will accept your cleaning. </p>
+            <a href="#" class="btn btn-default my-rounded-button">More Details</a>
+          </div>
+          <div class="col-md-4 text-center margin-purpose">
+            <span class="about-icon">
+              <i class="glyphicon glyphicon-phone"></i>
+              </span>
+              <h2>Instant Quote</h2>
+              <p class="text-center section-content">Don’t spend hours on the phone comparing prices and say goodbye to annoying sales pitches! Get an instant quote based on your individual
+needs and requirements. Any questions? Don’t be shy! Drop a line via
+live chat, email, or phone.</p>
+  <a href="#" class="btn btn-default my-rounded-button">More Details</a>
+
+          </div>
+          <div class="col-md-4 text-center margin-purpose">
+            <span class="about-icon">
+              <i class="fa fa-cc-visa"  aria-hidden="true"></i>
+            </span>
+            <h2>Safe & Simple Payment</h2>
+            <p class="text-center section-content">Once you're happy with the quote, you can make a safe and simple online payment to confirm your booking. We'll immediately send you a confirmation and invoice via email. And of course, your payment details are safe and secure with 128-bit SSL encryption too!</p>
+  <a href="#" class="btn btn-default my-rounded-button">More Details</a>
+          </div>
+    </div>
+  </div>
+</section>
+<section id="our-promise">
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center">Our promise</h1>
+        <hr class="line"/>
+        <p class="content text-center">What does it take to leave every customer with a smile?
+Here's how we're going keep Sydney happy!</p>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 text-center promise-margin">
+      <span class="promise-icon">
+    <i class="fa fa-user"></i></span>
+      <h2>Customer Service</h2>
+      <p class="section-content">Our customers always come first! If you have a question, we make ourselves available via
+live chat, email, or phone.</p>
+<span class="promise-icon">
+  <i class="glyphicon glyphicon-list-alt"></i></span>
+  <h2>Flexibility</h2>
+<p class="section-content">Whether it means picking up your keys,
+cleaning on holidays, or making a deadline, our flexible service is here to assist.</p>
+</div>
+
+        <div class="col-md-4 text-center promise-margin">
+          <span class="promise-icon">
+        <i class="fa fa-id-card-o" aria-hidden="true"></i></span>
+          <h2>Trained & Certified</h2>
+          <p class="section-content">A high quality service requires professionally
+trained and certified staff. We take pride in our cleaners so you can too!</p>
+    <span class="promise-icon">
+      <i class="fa fa-search" aria-hidden="true"></i></span>
+      <h2>Transparency</h2>
+    <p class="section-content">Sometimes a simple form just doesn’t cut it. If your home needs a little more love, we'll let you know so you're always on top of what's happening.</p>
+</div>
+<div class="col-md-4 text-center promise-margin">
+  <span class="promise-icon">
+<i class="fa fa-newspaper-o" aria-hidden="true"></i></span>
+  <h2>Full Liability Insurance</h2>
+  <p class="section-content">Things go wrong sometimes but rest assured,
+we got it covered. We put love into the details and on top of that, have full liability insurance!</p>
+<span class="promise-icon">
+<i class="fa fa-leaf" aria-hidden="true"></i></span>
+<h2>Eco-friendly</h2>
+<p class="section-content">You care. We care. Our range of cleaning
+services includes environmentally friendly
+and green products.</p>
+</div>
+
+        </div>
+  </div>
+</section>
+<section id="our-community">
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center">Our community</h1>
+        <hr class="line"/>
+        <p class="content text-center">We believe our work speaks for itself, but our
+customers vouch for us too. Here's what they have to say.</p>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 text-center margin-purpose">
+      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2HQCK_z31x7t52hpsqEOOUsT9rOCieuIbAvzZp2S1LdiFgFs1" class="img-responsive ">
+      <h3 class="text-center">Jessica Costanzo<br/>
+Paddington</h3>
+      <p class="text-center section-content">This is Neat did a great job during our end of lease move, our apartment was spotless. The service was easy to book and they were very accommodating with our strict deadlines and apartment regulations. The staff were friendly and the service was great. I would highly recommend them for any end of lease moves.
+5
+</p>
+<hr width="50%">
+                  <div class="community-social-links text-center">
+                    <a href="http://google.com" target="_blank"> <i class="fa fa-twitter"></i> </a>
+                    <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> </a>
+                    <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                  </div>
+    </div>
+    <div class="col-md-4 text-center margin-purpose">
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeYuiL_2O7ptuCXcj-ARuttHDwMZ-wYyXHxlrkM7NMUt-ADYWC" class="img-responsive">
+          <h3 class="text-center">Nic Mesker<br/>
+Woolloomooloo</h3>
+      <p class="text-center section-content">Upon seeing the finished result, I was truly blown away by the meticulous nature in which they had transformed the apartment from the mess of moving out, to the exact 'ready to rent again' level of clean that I needed. I will definitely be using their services again, and am proud to recommend their company. </p>
+      <hr width="50%">
+                        <div class="community-social-links text-center">
+                          <a href="http://google.com" target="_blank"> <i class="fa fa-twitter"></i> </a>
+                          <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> </a>
+                          <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </div>
+    </div>
+    <div class="col-md-4 text-center margin-purpose">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT5Z1OnzjtK5vRwLI-V1B2ZyZuB2t-c-vwMLFBgn8_bk8DkWcMog" class="img-responsive">
+          <h3 class="text-center">Renee Cuda<br/>
+Chippendale</h3>
+      <p class="text-center section-content">This is Neat did an excellent job for our 3 bedroom apartment in Chippendale. The clean was very thorough. We had a few issues getting into the car park in our building and I'd like to thank the team for being very patient about this inconvenience. I would definitely use them again next time I move rental properties.</p>
+      <hr width="50%">
+                        <div class="community-social-links text-center">
+                          <a href="http://google.com" target="_blank"> <i class="fa fa-twitter"></i> </a>
+                          <a href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin"></i> </a>
+                          <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </div>
+    </div>
+    </div>
+  </div>
+</section>
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center">Contact us</h1>
+          <hr class="line"/>
+      </div>
+    </div>
+    <div class="row">
+            <div class="col-md-4">
+              <div class="contact-description">
+                <h3 class="text-center">Where to meet ?</h3>
+                <h4 class="text-center">escott towers,Rutherford
+                 </h4>
+
+                <h3 class="text-center">Want to say hello ?</h3>
+                <div class="text-center">
+                  <a href="#" class="btn btn-primary">Contact me</a>
+                  <h2 style="color:black;">Thank you for 1000 shares!</h2>
+                  <div class="contact-social-links text-center">
+                    <a href="http://twitter.com" class="btn btn-primary">twitter
+                     <i class="fa fa-twitter"></i> </a>
+                  <a href="http://linkedin.com" class="btn btn-primary">linkedin <i class="fa fa-linkedin"></i> </a>
+                    <a href="http://facebook.com" class="btn btn-primary">Facebook <i class="fa fa-facebook"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div id="mygooglemap">
+              </div>
+            </div>
+          </div>
+  </section>
+  <section id="checklist">
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center">Cleaning checklist</h1>
+        <hr class="line"/>
+        <p class="content text-center">Our end of lease cleaning services cover all the important details that
+your real estate agent is looking for.</p>
+
+      </div>
+
+
+          <div class="row">
+            <div class="col-md-3">
+              <img src="https://thisisneat.com.au/wp-content/themes/neat/shared/img/gallery/carpet-steam-cleaning.jpg" class="img-responsive ">
+              <img src="https://thisisneat.com.au/wp-content/themes/neat/shared/img/gallery/oven-cleaner.jpg" class="img-responsive">
+
+            </div>
+
+            <div class="col-md-3">
+
+              <img src="https://thisisneat.com.au/wp-content/themes/neat/shared/img/gallery/exit-cleaner.jpg" class="img-responsive ">
+              <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYF0SMVhYh0H-v1x2bMfjzc6xd4EhPBGOmbsVzCmMzZxYhO-3v" class="img-responsive " style="border:8px solid white;">
+            </div>
+
+            <div class="col-md-3">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOhT9h43hL7XC0Kgd7aViM_xJEmYodaA09bF322eM1589bat96" class="img-responsive " style="border:8px solid white;">
+              <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFWdgfH1JS7zMO_ACAiAQkiyc6wzcq3jaUvvd1EHDvIzU_Vd1liw" class="img-responsive " style="border:8px solid white;">
+            </div>
+              <div class="col-md-3">
+                <img src="https://thisisneat.com.au/wp-content/themes/neat/shared/img/gallery/window-cleaner.jpg"  class="img-responsive">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFjDhxJW_PCDVzAs2Lobd3DzqzcYyixo9b8sF-wRNU_Ri5ihTcvw" class="img-responsive" style="border:8px solid white;">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+        <div class="white-content">
+          <img class="footer__logo" src="https://thisisneat.com.au/wp-content/themes/neat/shared/img/logo.png">
+          <h1 class="text-center" style="font-family: 'Baloo Bhaina', cursive;">You move out we clean up</h1>
+        </div>
+
+        <div class="row">
+         <div class="col-md-4">
+          <div class="footer-links text-center">
+               <ul>
+                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               </ul>
+             </div>
+           </div>
+
+           <div class="col-md-4">
+
+             <div class="footer-icons">
+               <ul>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Subscriptions</a></li>
+                </ul>
+              </div>
+               </div>
+            <div class="col-md-4 footer-content">
+              <h3>ABN: 92 454 683 221</h3>
+            </div>
+          </div>
+
+
+
+
+
+        </footer>
+
+
+  <script>
+        function initMap() {
+          var uluru = {lat: 40.826489, lng:-74.106809};
+          var map = new google.maps.Map(document.getElementById('mygooglemap'), {
+            zoom: 10,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7QsbG_yaUDCzqSt4iabufmyWVnufeWX4&callback=initMap">
+      </script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.js"></script>
+
+</body>
+</html>
